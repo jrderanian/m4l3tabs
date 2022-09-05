@@ -52,16 +52,20 @@ struct ContentView: View {
                 }
             }.tag(1)
             
+            /*
             ScrollView {
                 
                 
                 //let myArray = Array(repeating: 0, count: 100)
-                let myArray = [0...99]
-                ForEach(myArray, id: \.self){_ in
+                //let myArray = [0...99]
+                let counter = 0...99
+                ForEach(counter, id: \.self){_ in
                     Text(text3)
                 }
             }
-             /*
+             */
+             
+             
             VStack {
                 
                 Image("bens_new_car")
@@ -69,7 +73,8 @@ struct ContentView: View {
                     .scaledToFit()
             
             }
-              */
+            
+            
             
             .tabItem {
                 VStack {
