@@ -71,7 +71,7 @@ struct ContentView: View {
                         Image(systemName: "bolt.car")
                         Text("Cool Car")
                 }
-            }.tag(3)
+            }.tag(2)
             
             
           /*
