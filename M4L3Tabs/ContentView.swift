@@ -10,6 +10,12 @@ import SwiftUI
 struct ContentView: View {
     
     @State var tableIndex = 0
+    let text3 = "This is tab 3"
+    //let count = 99
+//    var numbers = [Int]()
+//    for i in 1...100 {
+//        numbers.append(i)
+//    }
 
     var body: some View {
         
@@ -48,10 +54,9 @@ struct ContentView: View {
             
             ScrollView {
                 
-                let text3 = "This is tab 3"
-                //let count = 99
-                let myArray = Array(repeating: 0, count: 100)
                 
+                //let myArray = Array(repeating: 0, count: 100)
+                let myArray = [0...99]
                 ForEach(myArray, id: \.self){_ in
                     Text(text3)
                 }
@@ -86,20 +91,21 @@ struct ContentView: View {
                     }
                 }.tag(4)
         */
-    }
                 
-    /*
+    
             Image("muscles")
                 .resizable()
                 .scaledToFit()
                 
                 .tabItem {
                     VStack {
-                        Image(systemName: "dumbbell")
+                        Image(systemName: "pencil.circle")
                         Text("Watch Out!")
                     }
-                }.tag(5)
-         */
+                }.tag(3)
+        
+    }
+         
        // }
   //  }
 }
