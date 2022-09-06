@@ -52,6 +52,20 @@ struct ContentView: View {
                 }
             }.tag(1)
             
+            
+            // Solution...note how foreach is
+            // built...list does scroll
+            
+            List {
+                ForEach(0..<100) { _ in
+                    Text("This is tab 3!")
+                }
+            }
+            
+            
+            
+            
+            // my version of the 100 listings...
             /*
             ScrollView {
                 
@@ -65,7 +79,7 @@ struct ContentView: View {
             }
              */
              
-             
+             /*
             VStack {
                 
                 Image("bens_new_car")
@@ -73,7 +87,7 @@ struct ContentView: View {
                     .scaledToFit()
             
             }
-            
+            */
             
             
             .tabItem {
